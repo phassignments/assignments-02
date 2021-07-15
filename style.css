@@ -1,0 +1,158 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2d25a0;
+  width: 100%;
+  font-size: 16px;
+}
+.navbar {
+  display: flex;
+  position: relative;
+}
+
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.button-login {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #e02c6d;
+  margin-top: 30px;
+}
+section {
+  padding: 100px;
+}
+
+/* Watch Live Section Start*/
+.watch-live {
+  background-color: #2d25a0;
+}
+.watch-live .row .half-width h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+}
+.row .half-width {
+  position: relative;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.row h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0a0826;
+}
+.row p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.half-width button {
+  background-color: #e02c6d;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+}
+.row .half-width img {
+  height: 450px;
+  width: 600px;
+  position: relative;
+}
+button:hover {
+  background-color: green;
+}
+/* Watch Live Section Start*/
+
+/* Player profile Section start */
+.players-profile {
+  margin-top: -100px;
+  display: grid;
+  grid-template-columns: repeat(3, 550px);
+  justify-content: center;
+}
+.players-profile .players {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40 px;
+}
+.players-profile .players .box {
+  width: 350px;
+  margin: 20px;
+  border: 20px solid #ffffff;
+  box-shadow: 20px 15px 30px rgba(0, 0, 0, 0.8);
+}
+.players-profile .players .box .pic {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.players-profile .players .box .pic img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Footer Section Start */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+footer img {
+  width: 500px;
+}
+.social-icon {
+  font-size: 32px;
+}
+/* Media Queries start */
+@media only screen and (max-width: 688px) {
+  body section .watch-live .players-profile .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .navbar {
+    display: none;
+  }
+  section {
+    padding: 20px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row .half-width {
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+}
